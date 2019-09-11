@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+    [type= "radio"] {
+        margin: 10px 0px
+    }
+    #cat-photo-element {
+        background-color: rgba(79, 231, 168, 0.788);
+    }
+
+    .red-text {
+        color: red;
+    }
+
+    #cat-photo-form {
+        background-color: aquamarine;
+    }
+
+    .silver-background {
+        background-color: silver;
+    }
+
+    .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+
+    .smaller-image {
+        width: 100px;
+    }
+
+    h2 {
+        font-family: Lobster, monospace;
+        color: rgba(36, 4, 4, 0.9);
+        border-color: red;
+        border-width: 5px;
+        border-style: solid;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: Lobster;
+    }
+</style>
+
+
+<head>
+    <title>The best page ever</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="red-text" id="cat-photo-element">CatPhotoApp</h2>
+    </header>
+    <main>
+        <!--Anchor tag link within the page and outside the page eg below-->
+        <nav>
+            <a href="http://freecatphotoapp.com"><img class="smaller-image thick-green-border"
+                    src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+        </nav><br>
+        <p></p>
+        <a href="aboutanimals.html">About Animals</a><br>
+        <p></p>
+        <a href="Penguin.html">Penguin pic made with CSS styles</a>
+        <p></p>
+        <a href="NewPage.html">AnotherNewPage</a>
+        <p></p>
+        <a href="#footer">Jump to bottom</a>
+
+        <!--Paragraph-->
+        <p><b>Ipsum dolor sit amet</b>, <i>shed everywhere shed everywhere stretching attack your ankles chase the red
+                dot,
+                hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed
+                everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed
+                everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the
+                grass sniff.</i></p>
+        <p><strong>Jump eat the grass rip the couch scratched sunbathe</strong>, <em>shed everywhere rip the couch sleep
+                in the sink
+                fluffy
+                fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your
+                ankles
+                chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch
+                scratched
+                sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</em></p>
+        <hr>
+        <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture,
+            especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak
+            roll
+            over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+        <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted
+            to
+            internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur
+            on
+            owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently
+            sniff
+            hand run outside as soon as door open yet destroy couch.</p>
+
+        <!--div = ‘div’ tag allows us to add styles and divide up the content into each different section, so that, each section of our Web site, can have its own little box.-->
+        <!--span = ‘span’ tag is a inline element, so an inline element is different from a block-->
+        <div class="silver-background">
+            <!--Unordered List-->
+            <p>Things cats love:</p>
+            <ul>
+                <li>Milk</li>
+                <li>Cheese</li>
+                <li>laser pointers</li>
+            </ul>
+
+            <!--Ordered List-->
+            <p>Top 3 things cats hate:</p>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+        </div>
+        <!--Method=GET or POST inside form are used to save in site db-->
+        <form action="/submit-cat-photo" id="cat-photo-form">
+            <!--Allows to select radio button using text/button, "Lable" element will do that-->
+            <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked><label
+                for="indoor">Indoor</label><br>
+            <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"><label for="outdoor">Outdoor</label>
+            <p></p>
+            <!--Allows to select radio button only using button-->
+            <input type="radio" name="indoor-outdoor" value="indoor"> Indoor<br>
+            <input type="radio" name="indoor-outdoor" value="outdoor"> Outdoor
+            <p></p>
+
+            <!--Checkboxes-->
+            <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label><br>
+            <label for="Mean"><input id="Mean" type="checkbox" name="personality" value="mean"> Mean</label><br>
+            <label for="Sleepy"><input id="Sleepy" type="checkbox" name="personality" value="sleepy"> Sleepy</label>
+            <p></p>
+
+            <!--TextBox-->
+            Enter Name:<input type="text" name="name" placeholder="Enter name" required><br>
+            <!--For Email ID-->
+            Enter Email:<input type="email" name="email" placeholder="Enter email ID"><br>
+            <!--Enter password-->
+            Enter Password:<input type="password" name="password" placeholder="Enter password" maxlength="5"><br>
+            <!--Input of date-->
+            Birthday:<input type="date" name="birthday"><br>
+            <!--Option selection from dropdown-->
+            Gender:<select>
+                <option value="Male" name="male">Male</option>
+                <option value="Female" name="female">Female</option>
+                <option value="other" name="other">Other</option>
+            </select><br>
+            <!--Submit button-->
+            <button type="submit">Register</button>
+            <!--Reset button-->
+            <button type="reset">Reset</button>
+            <p></p>
+        </form>
+
+    </main>
+
+    <footer id="footer">Copyright Cat Photo App</footer>
+
+</body>
+
+</html>
